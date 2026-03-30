@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>50 Формул Вирусных Reels — @k1_reel</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --surface2: #1a1a26;
+    --border: rgba(255,255,255,0.07);
+    --accent: #ff3d6e;
+    --accent2: #7b5ea7;
+    --accent3: #00d4aa;
+    --text: #f0eef8;
+    --muted: #7a7890;
+    --tag-bg: rgba(123,94,167,0.15);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Manrope', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      radial-gradient(ellipse 80% 60% at 20% 10%, rgba(123,94,167,0.12) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 80% at 80% 90%, rgba(255,61,110,0.08) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  header {
+    padding: 28px 0 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 48px;
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .brand { display: flex; align-items: center; gap: 14px; }
+
+  .brand-icon {
+    width: 46px; height: 46px;
+    background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    border-radius: 13px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; flex-shrink: 0;
+  }
+
+  .brand-text { display: flex; flex-direction: column; gap: 2px; }
+
+  .brand-handle {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px; letter-spacing: 1px;
+    background: linear-gradient(90deg, #fff 0%, #bbb 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+
+  .brand-sub {
+    font-size: 11px; color: var(--muted);
+    font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase;
+  }
+
+  .hero { text-align: center; padding: 16px 0 48px; }
+
+  .hero-label {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--tag-bg); border: 1px solid rgba(123,94,167,0.3);
+    color: #a084cc; font-size: 11px; font-weight: 700;
+    padding: 5px 14px; border-radius: 20px;
+    letter-spacing: 1px; text-transform: uppercase; margin-bottom: 20px;
+  }
+
+  h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(42px, 8vw, 80px);
+    line-height: 0.95; letter-spacing: 2px; margin-bottom: 16px;
+  }
+
+  h1 .accent-red { color: var(--accent); }
+  h1 .accent-purple { color: var(--accent2); }
+
+  .hero-desc {
+    color: var(--muted); font-size: 15px; font-weight: 400;
+    max-width: 520px; margin: 0 auto 28px; line-height: 1.6;
+  }
+
+  .stats-row {
+    display: flex; align-items: center; justify-content: center;
+    gap: 32px; flex-wrap: wrap;
+  }
+
+  .stat { text-align: center; }
+
+  .stat-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px; color: var(--accent); line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 11px; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px;
+  }
+
+  .cat-nav {
+    display: flex; flex-wrap: wrap; gap: 10px;
+    margin-bottom: 52px; padding: 20px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
+  }
+
+  .cat-btn {
+    display: flex; align-items: center; gap: 8px;
+    padding: 9px 16px; background: var(--surface2);
+    border: 1px solid var(--border); border-radius: 10px;
+    color: var(--muted); font-family: 'Manrope', sans-serif;
+    font-size: 13px; font-weight: 600; cursor: pointer;
+    transition: all 0.2s; text-decoration: none; white-space: nowrap;
+  }
+
+  .cat-btn:hover, .cat-btn.active {
+    background: linear-gradient(135deg, rgba(255,61,110,0.15), rgba(123,94,167,0.15));
+    border-color: rgba(255,61,110,0.4); color: var(--text); transform: translateY(-1px);
+  }
+
+  .cat-btn .icon { font-size: 16px; }
+
+  .section { margin-bottom: 64px; scroll-margin-top: 20px; display: block; }
+
+  .section-header {
+    display: flex; align-items: center; gap: 14px;
+    margin-bottom: 24px; padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .section-icon {
+    width: 44px; height: 44px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; flex-shrink: 0;
+  }
+
+  .section-title { flex: 1; }
+
+  .section-title h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px; letter-spacing: 1px; line-height: 1;
+  }
+
+  .section-title p { font-size: 12px; color: var(--muted); margin-top: 3px; font-weight: 500; }
+
+  .section-count { font-family: 'Bebas Neue', sans-serif; font-size: 20px; color: var(--muted); }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+    gap: 16px;
+  }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 16px; padding: 20px; transition: all 0.25s;
+    cursor: default; position: relative; overflow: hidden;
+  }
+
+  .card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0;
+    height: 2px; opacity: 0; transition: opacity 0.3s;
+  }
+
+  .card:hover {
+    border-color: rgba(255,61,110,0.25); transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+  }
+
+  .card:hover::before { opacity: 1; }
+
+  .card-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 13px; color: var(--muted); letter-spacing: 1px; margin-bottom: 8px;
+  }
+
+  .card-title {
+    font-size: 15px; font-weight: 700; color: var(--text);
+    margin-bottom: 12px; line-height: 1.3;
+  }
+
+  .card-formula {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: rgba(255,61,110,0.1); border: 1px solid rgba(255,61,110,0.2);
+    color: #ff6b8e; font-size: 10px; font-weight: 700;
+    padding: 4px 10px; border-radius: 6px; letter-spacing: 0.3px;
+    font-family: 'Manrope', monospace;
+  }
+
+  /* Category color schemes */
+  .cat-fitness .section-icon { background: rgba(255,80,50,0.15); }
+  .cat-fitness .step-dot { background: #ff5032; }
+  .cat-fitness .card::before { background: linear-gradient(90deg, #ff5032, #ff8c00); }
+
+  .cat-money .section-icon { background: rgba(0,200,100,0.15); }
+  .cat-money .step-dot { background: #00c864; }
+  .cat-money .card::before { background: linear-gradient(90deg, #00c864, #00d4aa); }
+
+  .cat-beauty .section-icon { background: rgba(255,61,110,0.15); }
+  .cat-beauty .step-dot { background: #ff3d6e; }
+  .cat-beauty .card::before { background: linear-gradient(90deg, #ff3d6e, #ff80ab); }
+
+  .cat-food .section-icon { background: rgba(255,165,0,0.15); }
+  .cat-food .step-dot { background: #ffa500; }
+  .cat-food .card::before { background: linear-gradient(90deg, #ffa500, #ff6b00); }
+
+  .cat-travel .section-icon { background: rgba(0,160,255,0.15); }
+  .cat-travel .step-dot { background: #00a0ff; }
+  .cat-travel .card::before { background: linear-gradient(90deg, #00a0ff, #00d4ff); }
+
+  .cat-psych .section-icon { background: rgba(123,94,167,0.15); }
+  .cat-psych .step-dot { background: #7b5ea7; }
+  .cat-psych .card::before { background: linear-gradient(90deg, #7b5ea7, #b08fd0); }
+
+  .cat-biz .section-icon { background: rgba(255,220,0,0.12); }
+  .cat-biz .step-dot { background: #e6c000; }
+  .cat-biz .card::before { background: linear-gradient(90deg, #e6c000, #ffd700); }
+
+  .cat-edu .section-icon { background: rgba(0,200,220,0.12); }
+  .cat-edu .step-dot { background: #00c8dc; }
+  .cat-edu .card::before { background: linear-gradient(90deg, #00c8dc, #00ffee); }
+
+  .cat-parents .section-icon { background: rgba(255,130,200,0.12); }
+  .cat-parents .step-dot { background: #ff82c8; }
+  .cat-parents .card::before { background: linear-gradient(90deg, #ff82c8, #ffaadd); }
+
+  .cat-pets .section-icon { background: rgba(140,200,80,0.15); }
+  .cat-pets .step-dot { background: #8cc850; }
+  .cat-pets .card::before { background: linear-gradient(90deg, #8cc850, #b0e060); }
+
+  /* FOOTER CTA */
+  .footer-cta {
+    margin: 64px 0 40px;
+    background: linear-gradient(135deg, rgba(255,61,110,0.15), rgba(123,94,167,0.2));
+    border: 1px solid rgba(255,61,110,0.25); border-radius: 24px;
+    padding: 48px 32px; text-align: center; position: relative; overflow: hidden;
+  }
+
+  .footer-cta::before {
+    content: ''; position: absolute; top: -60px; right: -60px;
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, rgba(255,61,110,0.2), transparent 70%);
+    pointer-events: none;
+  }
+
+  .footer-cta::after {
+    content: ''; position: absolute; bottom: -60px; left: -60px;
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, rgba(123,94,167,0.2), transparent 70%);
+    pointer-events: none;
+  }
+
+  .cta-emoji { font-size: 48px; margin-bottom: 16px; }
+
+  .footer-cta h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(28px, 5vw, 48px); letter-spacing: 2px;
+    margin-bottom: 12px; position: relative; z-index: 1;
+  }
+
+  .footer-cta p {
+    color: var(--muted); font-size: 15px; line-height: 1.6;
+    max-width: 440px; margin: 0 auto 28px; position: relative; z-index: 1;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #fff; text-decoration: none; font-size: 16px; font-weight: 800;
+    padding: 14px 32px; border-radius: 14px; letter-spacing: 0.5px;
+    transition: all 0.2s; position: relative; z-index: 1;
+  }
+
+  .cta-btn:hover { transform: translateY(-2px) scale(1.03); box-shadow: 0 12px 40px rgba(220,39,67,0.4); }
+
+  /* SELL BANNER */
+  .sell-banner {
+    margin: 0 0 64px;
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid rgba(255,215,0,0.2);
+  }
+
+  .sell-banner-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 70% 80% at 10% 50%, rgba(255,61,110,0.18) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 70% at 90% 30%, rgba(123,94,167,0.22) 0%, transparent 60%),
+      linear-gradient(135deg, #0f0a1a 0%, #120f1f 100%);
+    z-index: 0;
+  }
+
+  .sell-banner-inner {
+    position: relative;
+    z-index: 1;
+    padding: 52px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+  }
+
+  .sell-tag {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(255,215,0,0.1); border: 1px solid rgba(255,215,0,0.3);
+    color: #ffd700; font-size: 11px; font-weight: 700;
+    padding: 5px 16px; border-radius: 20px;
+    letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 24px;
+  }
+
+  .sell-headline {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(28px, 5vw, 52px);
+    letter-spacing: 2px;
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+  .sell-headline .hl-red { color: var(--accent); }
+
+  .sell-hook {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+    max-width: 560px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  .sell-body {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--muted);
+    max-width: 540px;
+    line-height: 1.7;
+    margin-bottom: 36px;
+  }
+
+  .sell-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+
+  .sell-feature {
+    display: flex; align-items: center; gap: 8px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #d0ccee;
+  }
+
+  .sell-feature .fi { font-size: 15px; }
+
+  .sell-cta-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .sell-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, #ff3d6e, #c2185b);
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 18px 40px;
+    border-radius: 16px;
+    letter-spacing: 0.5px;
+    transition: all 0.2s;
+    box-shadow: 0 8px 32px rgba(255,61,110,0.35);
+  }
+
+  .sell-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 16px 48px rgba(255,61,110,0.5);
+  }
+
+  .sell-note {
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.3px;
+  }
+
+  .sell-note span { color: #ffd700; font-weight: 700; }
+
+  .footer-note {
+    text-align: center; padding: 20px 0 40px;
+    color: var(--muted); font-size: 12px;
+  }
+
+  .footer-note span { color: var(--accent); }
+
+  @media (max-width: 640px) {
+    .cards-grid { grid-template-columns: 1fr; }
+    .cat-nav { gap: 8px; }
+    .cat-btn { font-size: 12px; padding: 8px 12px; }
+    .stats-row { gap: 20px; }
+    .sell-banner-inner { padding: 36px 20px; }
+    .sell-btn { font-size: 16px; padding: 16px 28px; }
+  }
+</style>
+</head>
+<body>
+
+<script>
+const FORMULAS_DB = {
+  sections: [
+    {
+      id: "fitness", cat: "cat-fitness", icon: "💪", num: "#1",
+      title: "Фитнес / Здоровье", desc: "Трансформации, тренировки, питание, мотивация",
+      cards: [
+        { num: "01", title: "«До/После с объяснением»", formula: "РЕЗУЛЬТАТ → ПРОБЛЕМА → МЕТОД → ДОКАЗАТЕЛЬСТВО → CTA" },
+        { num: "02", title: "«Разоблачение мифа»", formula: "МИФ → РЕАКЦИЯ → ПРАВДА → ПОЧЕМУ → ВЫВОД" },
+        { num: "03", title: "«День из жизни спортсмена»", formula: "УТРО → ТРЕНИРОВКА → ПИТАНИЕ → ВОССТАНОВЛЕНИЕ → ИТОГ" },
+        { num: "04", title: "«Сравнение N упражнений»", formula: "ПРОБЛЕМА → ВАРИАНТ А → ВАРИАНТ Б → ПОБЕДИТЕЛЬ → ДЕЙСТВИЕ" },
+        { num: "05", title: "«Ошибки новичков»", formula: "ОБЕЩАНИЕ → ОШИБКА ×3 → ИСПРАВЛЕНИЕ → СДВИГ" }
+      ]
+    },
+    {
+      id: "money", cat: "cat-money", icon: "💰", num: "#2",
+      title: "Деньги / Заработок", desc: "Инвестиции, доходы, финансовая грамотность",
+      cards: [
+        { num: "06", title: "«Я зарабатываю X — вот как»", formula: "ЗАЯВЛЕНИЕ → ДОВЕРИЕ → РАЗБИВКА → УРОК → ПРЕДЛОЖЕНИЕ" },
+        { num: "07", title: "«Финансовая ошибка которая стоила мне X»", formula: "ОШИБКА → ЦЕНА → КОРЕНЬ → ИСПРАВЛЕНИЕ → ЗАЩИТА ЗРИТЕЛЯ" },
+        { num: "08", title: "«Пассивный доход за N шагов»", formula: "МЕЧТА → РЕАЛИЗМ → ШАГИ → СРОКИ → НАЧНИ СЕЙЧАС" },
+        { num: "09", title: "«Что я бы сделал с нуля сегодня»", formula: "КОНТЕКСТ → ОГРАНИЧЕНИЯ → ХОД 1 → ХОД 2 → ХОД 3 → ПОЧЕМУ" },
+        { num: "10", title: "«Сравнение: работа vs своё дело»", formula: "КОНФЛИКТ → СТОРОНА А → СТОРОНА Б → НЮАНС → РЕШЕНИЕ" }
+      ]
+    },
+    {
+      id: "beauty", cat: "cat-beauty", icon: "💄", num: "#3",
+      title: "Бьюти / Уход за собой", desc: "Макияж, скинкер, стиль, трансформации",
+      cards: [
+        { num: "11", title: "«Get Ready With Me»", formula: "КОНТЕКСТ → ПРОДУКТЫ → НАНЕСЕНИЕ → РЕЗУЛЬТАТ → ОЦЕНКА" },
+        { num: "12", title: "«Дорого vs Дёшево»", formula: "БАТЛ → ТЕСТ А → ТЕСТ Б → ВЕРДИКТ → РЕКОМЕНДАЦИЯ" },
+        { num: "13", title: "«Трансформация проблемной зоны»", formula: "ПРОБЛЕМА → ДИАГНОЗ → ПРОТОКОЛ → ПРОГРЕСС → СЕЙЧАС" },
+        { num: "14", title: "«5 продуктов которые заменили мне всё»", formula: "ЗАЯВЛЕНИЕ → ПРОДУКТ ×5 → ПОЛЬЗА → СОЧЕТАНИЕ → ИТОГ" },
+        { num: "15", title: "«Тренд: делаю или нет»", formula: "ТРЕНД → ПОПРОБОВАТЬ → ЧЕСТНАЯ РЕАКЦИЯ → ДЛЯ КОГО → ВЕРДИКТ" }
+      ]
+    },
+    {
+      id: "food", cat: "cat-food", icon: "🍳", num: "#4",
+      title: "Еда / Кулинария", desc: "Рецепты, лайфхаки, ресторанные обзоры",
+      cards: [
+        { num: "16", title: "«Рецепт за X минут»", formula: "ОБЕЩАНИЕ → ИНГРЕДИЕНТЫ → ШАГИ → ПОДАЧА → РЕАКЦИЯ" },
+        { num: "17", title: "«Пробую вирусный рецепт»", formula: "ИСТОЧНИК → ПОВТОРЕНИЕ → ЖИВАЯ РЕАКЦИЯ → СРАВНЕНИЕ → ВЕРДИКТ" },
+        { num: "18", title: "«Что я ем за день — честно»", formula: "УТРО → ОБЕД → ПЕРЕКУС → УЖИН → ИТОГ" },
+        { num: "19", title: "«Лайфхак который изменил готовку»", formula: "ПРОБЛЕМА → СТАРЫЙ СПОСОБ → ОТКРЫТИЕ → ДЕМО → ПОДЕЛИСЬ" },
+        { num: "20", title: "«Меню на неделю за X рублей»", formula: "БЮДЖЕТ → ЗАКУПКА → ПОДГОТОВКА → ДЕНЬ ×5 → ИТОГ + ЭКОНОМИЯ" }
+      ]
+    },
+    {
+      id: "travel", cat: "cat-travel", icon: "✈️", num: "#5",
+      title: "Путешествия", desc: "Дестинации, лайфхаки, бюджетные поездки",
+      cards: [
+        { num: "21", title: "«Дестинация за 60 секунд»", formula: "КУДА → ЗАЧЕМ → ТОП 3 → АТМОСФЕРА → ЕХАТЬ ИЛИ НЕТ" },
+        { num: "22", title: "«Ожидание vs Реальность»", formula: "ОЖИДАНИЕ → ПРИБЫТИЕ → РЕАЛЬНОСТЬ ×3 → УРОК → СОВЕТЫ" },
+        { num: "23", title: "«Бюджетная поездка в [место]»", formula: "ОБЩАЯ СУММА → ТРАНСПОРТ → ЖИЛЬЁ → ЕДА → АКТИВНОСТИ → ОЦЕНКА" },
+        { num: "24", title: "«Что взять / не взять в [место]»", formula: "ДЕСТИНАЦИЯ → ОБЯЗАТЕЛЬНО ×5 → ОСТАВЬ ДОМА ×3 → ХОТЕЛ БЫ ЗНАТЬ → СПИСОК" },
+        { num: "25", title: "«Тайное место которое никто не знает»", formula: "ИНТРИГА → МЕСТО → КАК ДОБРАТЬСЯ → ЧТО ДЕЛАТЬ → ПОЧЕМУ СЕКРЕТ" }
+      ]
+    },
+    {
+      id: "psych", cat: "cat-psych", icon: "🧠", num: "#6",
+      title: "Психология / Саморазвитие", desc: "Мышление, привычки, отношения, внутренние паттерны",
+      cards: [
+        { num: "26", title: "«Паттерн который тебя держит»", formula: "СИМПТОМ → ПАТТЕРН → КОРЕНЬ → РАСПОЗНАВАНИЕ → ВЫХОД" },
+        { num: "27", title: "«Прочитай это если чувствуешь X»", formula: "ЭМОЦИЯ → ВАЛИДАЦИЯ → РЕФРЕЙМ → ИНСАЙТ → СЛЕДУЮЩИЙ ШАГ" },
+        { num: "28", title: "«Я заметил кое-что о людях которые X»", formula: "НАБЛЮДЕНИЕ → ПАТТЕРН ×3 → ПОЧЕМУ → САМОПРОВЕРКА → ПОДЕЛИСЬ" },
+        { num: "29", title: "«Концепция которая изменила мой взгляд»", formula: "ДО → ВСТРЕЧА → КОНЦЕПЦИЯ → СДВИГ → ПРИМЕНЕНИЕ" },
+        { num: "30", title: "«Тест: узнай себя»", formula: "ИНТРО → СЦЕНАРИЙ ×3 → ТИП А / Б → ЗНАЧЕНИЕ → ПРИГЛАШЕНИЕ" }
+      ]
+    },
+    {
+      id: "biz", cat: "cat-biz", icon: "🚀", num: "#7",
+      title: "Бизнес / Предпринимательство", desc: "Стартапы, продажи, маркетинг, рост",
+      cards: [
+        { num: "31", title: "«Как я запустил это за X дней»", formula: "ИДЕЯ → РЕШЕНИЕ → СБОРКА → ЗАПУСК → РЕЗУЛЬТАТ + УРОК" },
+        { num: "32", title: "«Почему 90% бизнесов умирают»", formula: "СТАТИСТИКА → ПРИЧИНА ×3 → ПАТТЕРН ВЫЖИВШИХ → ПРИМЕНИТЬ" },
+        { num: "33", title: "«Я провалился — вот что узнал»", formula: "МОМЕНТ ПРОВАЛА → КОНТЕКСТ → ОШИБКИ ×3 → ПИВОТ → ПОЛУЧЕННОЕ" },
+        { num: "34", title: "«Мой стек инструментов»", formula: "РОЛЬ → ИНСТРУМЕНТ ×5 → ПРИМЕНЕНИЕ → СТОИМОСТЬ → РЕКОМЕНДАЦИЯ" },
+        { num: "35", title: "«Разбор чужого бизнеса за 60 сек»", formula: "БИЗНЕС → ЧТО РАБОТАЕТ → ЧТО НЕ РАБОТАЕТ → ИСПРАВЛЕНИЕ → ВЫВОД" }
+      ]
+    },
+    {
+      id: "edu", cat: "cat-edu", icon: "📚", num: "#8",
+      title: "Образование / Обучение", desc: "Языки, навыки, книги, лайфлонг лёрнинг",
+      cards: [
+        { num: "36", title: "«Книга за 60 секунд»", formula: "КНИГА → ГЛАВНАЯ ИДЕЯ → ИНСАЙТ ×2 → КОМУ НУЖНА → ОЦЕНКА" },
+        { num: "37", title: "«Я учил X за N дней — честный отчёт»", formula: "ЦЕЛЬ → МЕТОД → ТРУДНОСТИ → ПРОРЫВ → ИТОГ + СОВЕТ" },
+        { num: "38", title: "«Концепция которую должен знать каждый»", formula: "ЗАЯВЛЕНИЕ → ЧТО ЭТО → ПРИМЕР → ЗАЧЕМ ВАЖНО → ПРИМЕНИТЬ" },
+        { num: "39", title: "«Лучший способ учить X который никто не использует»", formula: "ОБЫЧНЫЙ СПОСОБ → ПРОБЛЕМА → ЛУЧШИЙ СПОСОБ → КАК → ДОКАЗАТЕЛЬСТВО" },
+        { num: "40", title: "«Вопрос который меняет обучение»", formula: "ВОПРОС → ПОЧЕМУ МОЩНЫЙ → ДЕМО → КОНТРАСТ → ПРИВЫЧКА" }
+      ]
+    },
+    {
+      id: "parents", cat: "cat-parents", icon: "👶", num: "#9",
+      title: "Родительство / Семья", desc: "Воспитание, жизнь с детьми, честность",
+      cards: [
+        { num: "41", title: "«Честно о [возраст] месяцев / лет с ребёнком»", formula: "ЭТАП → СЛОЖНОЕ × 3 → ПРЕКРАСНОЕ × 3 → ЧТО ПОМОГЛО → СОЛИДАРНОСТЬ" },
+        { num: "42", title: "«Ошибка которую я больше не делаю»", formula: "ОШИБКА → КАК БЫЛО → ВЛИЯНИЕ НА РЕБЁНКА → ИЗМЕНЕНИЕ → СЕЙЧАС" },
+        { num: "43", title: "«Лайфхаки с детьми которые реально работают»", formula: "ПРОБЛЕМА → ЛАЙФХАК ×3 → ДЕМО → РЕЗУЛЬТАТ → ПОДЕЛИСЬ" },
+        { num: "44", title: "«День с ребёнком — реальность»", formula: "УТРЕННИЙ ХАОС → ЛУЧШИЙ МОМЕНТ → СЛОЖНЫЙ МОМЕНТ → НЕОЖИДАННОЕ → КОНЕЦ ДНЯ" },
+        { num: "45", title: "«Что я хотел бы знать до родительства»", formula: "ВСТУПЛЕНИЕ → ПРАВДА ×4 → СЮРПРИЗ → ПРИГЛАШЕНИЕ" }
+      ]
+    },
+    {
+      id: "pets", cat: "cat-pets", icon: "🐾", num: "#10",
+      title: "Питомцы / Животные", desc: "Уход, лайфхаки, обучение, истории",
+      cards: [
+        { num: "46", title: "«Ошибки нового владельца»", formula: "МОЯ ИСТОРИЯ → ОШИБКА ×3 → ХОТЕЛ БЫ ЗНАТЬ → СОВЕТ → ЛЮБОВЬ" },
+        { num: "47", title: "«Учу питомца трюку за X дней»", formula: "ЦЕЛЬ → МЕТОД → ДЕНЬ 1 → ПРОГРЕСС → ФИНАЛЬНЫЙ РЕЗУЛЬТАТ" },
+        { num: "48", title: "«День из жизни [вид питомца]»", formula: "ПРОБУЖДЕНИЕ → КОРМЛЕНИЕ → ИГРА → ОТДЫХ → ВЕЧЕР + ЛИЧНОСТЬ" },
+        { num: "49", title: "«Что взять питомцу на X рублей»", formula: "БЮДЖЕТ → ОБЯЗАТЕЛЬНОЕ → ЖЕЛАТЕЛЬНОЕ → ПРОПУСТИТЬ → ИТОГО" },
+        { num: "50", title: "«Как питомец изменил мою жизнь»", formula: "ДО → ПОЯВЛЕНИЕ → ИЗМЕНЕНИЕ ×3 → НЕОЖИДАННЫЙ ПОДАРОК → СЕЙЧАС" }
+      ]
+    }
+  ]
+};
+
+function renderCards() {
+  const container = document.getElementById('sections-container');
+  FORMULAS_DB.sections.forEach(section => {
+    const sec = document.createElement('section');
+    sec.className = 'section ' + section.cat;
+    sec.id = section.id;
+    const cardsHtml = section.cards.map(card =>
+      '<div class="card ' + section.cat + '">' +
+        '<div class="card-num">ФОРМУЛА ' + card.num + '</div>' +
+        '<div class="card-title">' + card.title + '</div>' +
+        '<div class="card-formula">' + card.formula + '</div>' +
+      '</div>'
+    ).join('');
+    sec.innerHTML =
+      '<div class="section-header">' +
+        '<div class="section-icon">' + section.icon + '</div>' +
+        '<div class="section-title"><h2>' + section.title + '</h2><p>' + section.desc + '</p></div>' +
+        '<div class="section-count">' + section.num + '</div>' +
+      '</div>' +
+      '<div class="cards-grid">' + cardsHtml + '</div>';
+    container.appendChild(sec);
+  });
+}
+</script>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-icon">📱</div>
+        <div class="brand-text">
+          <div class="brand-handle">@k1_reel</div>
+          <div class="brand-sub">Instagram · Reels формулы</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-label">🎬 База знаний</div>
+    <h1>
+      50 ФОРМУЛ ВИРУСНЫХ<br>
+      <span class="accent-red">REELS</span>
+    </h1>
+    <p class="hero-desc">Формулы построения вирусных видео от первой секунды до финального кадра.</p>
+    <div class="stats-row">
+      <div class="stat"><div class="stat-num">50</div><div class="stat-label">Формул</div></div>
+      <div class="stat"><div class="stat-num">10</div><div class="stat-label">Ниш</div></div>
+      <div class="stat"><div class="stat-num">∞</div><div class="stat-label">Применений</div></div>
+    </div>
+  </div>
+
+  <!-- CATEGORY NAV -->
+  <div class="cat-nav">
+    <a class="cat-btn active" href="#fitness"><span class="icon">💪</span> Фитнес</a>
+    <a class="cat-btn" href="#money"><span class="icon">💰</span> Деньги</a>
+    <a class="cat-btn" href="#beauty"><span class="icon">💄</span> Бьюти</a>
+    <a class="cat-btn" href="#food"><span class="icon">🍳</span> Еда</a>
+    <a class="cat-btn" href="#travel"><span class="icon">✈️</span> Путешествия</a>
+    <a class="cat-btn" href="#psych"><span class="icon">🧠</span> Психология</a>
+    <a class="cat-btn" href="#biz"><span class="icon">🚀</span> Бизнес</a>
+    <a class="cat-btn" href="#edu"><span class="icon">📚</span> Образование</a>
+    <a class="cat-btn" href="#parents"><span class="icon">👶</span> Родители</a>
+    <a class="cat-btn" href="#pets"><span class="icon">🐾</span> Питомцы</a>
+  </div>
+
+  <!-- SECTIONS -->
+  <div id="sections-container"></div>
+
+  <!-- FOOTER CTA -->
+  <div class="footer-cta">
+    <div class="cta-emoji">🎬</div>
+    <h3>БОЛЬШЕ ФОРМУЛ<br>И МЕХАНИК REELS</h3>
+    <p>Подписывайся на Instagram — там ещё больше рабочих форматов, разборов и инсайтов про вирусный контент</p>
+    <a class="cta-btn" href="https://instagram.com/k1_reel" target="_blank">📱 Подписаться @k1_reel</a>
+  </div>
+
+  <!-- SELL BANNER -->
+  <div class="sell-banner">
+    <div class="sell-banner-bg"></div>
+    <div class="sell-banner-inner">
+
+      <div class="sell-tag">☕ По цене чашки кофе</div>
+
+      <div class="sell-headline">
+        Я МОГ БЫ ОСТАВИТЬ<br>ЭТО <span class="hl-red">ТОЛЬКО ДЛЯ СЕБЯ.</span>
+      </div>
+
+      <p class="sell-hook">
+        Но честно? Мне выгодно, чтобы ты умел делать контент.<br>Сильные рядом — это не конкуренция. Это среда.
+      </p>
+
+      <p class="sell-body">
+        Эти формулы — основа того, как я делаю рилсы с миллионами просмотров.
+        Бесплатная версия — скелет. Платная — полный разбор с объяснением механики каждого шага.
+        Стоит как чашка кофе. Работает месяцами.
+      </p>
+
+      <div class="sell-features">
+        <div class="sell-feature"><span class="fi">📋</span> 50 формул с расшифровкой каждого шага</div>
+        <div class="sell-feature"><span class="fi">🧠</span> Механика удержания зрителя</div>
+        <div class="sell-feature"><span class="fi">⚡</span> Почему алгоритм выбирает именно это</div>
+        <div class="sell-feature"><span class="fi">🎯</span> Адаптация под любую нишу</div>
+      </div>
+
+      <div class="sell-cta-wrap">
+        <a class="sell-btn" href="https://t.me/k1_reel_channel/8" target="_blank">
+          🚀 Забрать доступ за 300 ₽
+        </a>
+        <div class="sell-note">Это меньше, чем капучино с миндальным молоком — но работает <span>месяцами</span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-note">
+    Все формулы составлены <span>@k1_reel</span> · 2026 · Instagram Reels
+  </div>
+
+</div>
+
+<script>
+  renderCards();
+
+  document.querySelectorAll('.cat-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        document.querySelectorAll('.cat-btn').forEach(btn => {
+          btn.classList.remove('active');
+          if (btn.getAttribute('href') === '#' + id) btn.classList.add('active');
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+
+  document.querySelectorAll('.section').forEach(s => observer.observe(s));
+</script>
+
+</body>
+</html>
